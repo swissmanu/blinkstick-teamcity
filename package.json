@@ -1,0 +1,16 @@
+{
+  "name": "blinkstick-teamcity",
+  "version": "1.0.0",
+  "description": "Use a Blinkstick to show latest status of one or more TeamCity builds.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Manuel Alabor <manuel@alabor.me>",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.21.0",
+    "request": "^2.72.0",
+    "slack": "^7.2.0"
+  }
+}

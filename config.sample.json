@@ -1,0 +1,13 @@
+{
+  "server": {
+    "url": "https://teamcity.server",
+    "user": "user",
+    "password": "password",
+    "cert": "pathToP12Cert",
+    "pollInterval": 5000
+  },
+  "buildLocators": [{
+    "name": "Build",
+    "locator": "buildType:BuiltTypeName,count:1,branch:develop"
+  }]
+}
