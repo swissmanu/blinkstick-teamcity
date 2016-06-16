@@ -9,7 +9,6 @@
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
   "dependencies": {
-    "ramda": "^0.21.0",
     "request": "^2.72.0",
     "slack": "^7.2.0"
   }
