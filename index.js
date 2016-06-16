@@ -4,16 +4,19 @@ const blinkstick = require('./lib/blinkstick')
 const checker = require('./lib/checker')
 
 function runner (config) {
-  const configuredChecker = checker(
-    teamCity(config),
-    blinkstick(config)
-  )
+  const configuredChecker = checker(teamCity(config), blinkstick(config))
   const run = () => {
     setTimeout(() => {
-      configuredChecker().then(run)
+      check().then(run)
     }, config.server.pollInterval)
   }
+  const check = () => {
+    return configuredChecker()
+      .catch((e) => {
+        console.log('Error:', e)
+      })
+  }
 
-  configuredChecker().then(run)
+  check().then(run)
 }
 runner(config)
