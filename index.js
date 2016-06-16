@@ -1,6 +1,6 @@
 const config = require('./config.json')
 const teamCity = require('./lib/teamCity')
-const blinkstick = require('./lib/blinkstick')
+const blinkstick = require('./lib/blinkStick')
 const checker = require('./lib/checker')
 
 function runner (config) {

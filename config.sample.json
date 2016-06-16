@@ -4,10 +4,13 @@
     "user": "user",
     "password": "password",
     "cert": "pathToP12Cert",
-    "pollInterval": 5000
+    "pollInterval": 10000
   },
   "buildLocators": [{
     "name": "Build",
     "locator": "buildType:BuiltTypeName,count:1,branch:develop"
-  }]
+  }],
+  "blinkStick": {
+    "numberOfLeds": 8
+  }
 }
