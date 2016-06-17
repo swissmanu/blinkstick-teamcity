@@ -1,5 +1,5 @@
 sudo: false
-language: node_js
+language: objective-c
 cache:
   directories:
     - node_modules
