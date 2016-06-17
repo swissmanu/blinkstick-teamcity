@@ -1,9 +1,9 @@
 {
   "name": "blinkstick-teamcity",
-  "version": "1.0.0",
   "description": "Simple build status indicator for TeamCity using a BlinkStick.",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
@@ -12,11 +12,19 @@
     "request": "^2.72.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^1.1.6"
+    "cz-conventional-changelog": "^1.1.6",
+    "semantic-release": "^4.3.5"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swissmanu/blinkstick-teamcity.git"
+  },
+  "engines": {
+    "node": ">5.9"
   }
 }
