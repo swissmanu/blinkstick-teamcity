@@ -3,6 +3,20 @@
 
 Simple build status indicator for [TeamCity](https://www.jetbrains.com/teamcity/) using a [BlinkStick](https://www.blinkstick.com/).
 
+## Usage
+### Installation
+```bash
+npm install -g blinkstick-teamcity
+```
+
+### Configuration
+Create your own `config.json` file using `config.sample.json`.
+
+### Run
+```bash
+blinkstick-teamcity path/to/your/config.json
+```
+
 ## License
 
 Copyright (c) 2016 Manuel Alabor

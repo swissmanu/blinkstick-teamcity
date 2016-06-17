@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+if (process.argv.length !== 3) {
+  console.log('blinkstick-teamcity')
+  console.log('Usage: blinkstick-teamcity [path/to/config.json]')
+  process.exit(1)
+}
+
+const configFile = process.argv[2]
+try {
+  const config = require(configFile)
+  require('../lib/runner')(config)
+} catch (e) {
+  console.log('blinkstick-teamcity')
+  console.log(`Could not load config file ${configFile}`)
+  process.exit(2)
+}
