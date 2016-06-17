@@ -25,6 +25,7 @@
     "url": "https://github.com/swissmanu/blinkstick-teamcity.git"
   },
   "engines": {
-    "node": ">5.9"
+    "node": "^5.9",
+    "npm": "^3"
   }
 }
