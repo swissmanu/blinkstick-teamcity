@@ -6,7 +6,8 @@ if (process.argv.length !== 3) {
   process.exit(1)
 }
 
-const configFile = process.argv[2]
+const path = require('path')
+const configFile = path.resolve(process.argv[2])
 try {
   const config = require(configFile)
   require('../lib/runner')(config)
