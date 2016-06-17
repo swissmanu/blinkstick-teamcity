@@ -11,6 +11,7 @@ npm install -g blinkstick-teamcity
 
 ### Configuration
 Create your own `config.json` file using `config.sample.json`.
+Refer to the [TeamCity API documentation](https://confluence.jetbrains.com/display/TCD9/REST+API#RESTAPI-BuildLocator) to see what kind of build locators can be defined.
 
 ### Run
 ```bash
