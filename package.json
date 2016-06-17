@@ -27,5 +27,6 @@
   "engines": {
     "node": "^5.9",
     "npm": "^3"
-  }
+  },
+  "bin": "bin/blinkstick-teamcity"
 }
