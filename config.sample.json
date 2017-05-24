@@ -12,7 +12,8 @@
     "reportingColors": {
       "ok": "green",
       "failed": "red",
-      "noConnection": "yellow"
+      "noConnection": "yellow",
+      "noBuildsFound": "purple"
     },
     "buildLocators": [{
         "name": "Build",
